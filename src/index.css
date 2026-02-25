@@ -1,20 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 @import "tailwindcss";
 
 :root {
-  --primaryFont: "Poppins", sans-serif;
   --baseFontSize: 16px;
+  --primaryFont: "Inter", sans-serif;
   --bodyColor: #232323;
 }
 
 .theme1 {
   --primaryColor: #1c799b;
-  --secondaryColor: #2ABC79;
+  --secondaryColor: #2abc79;
+  --primaryFont: "Poppins", sans-serif;
+  --secondaryFont: "Quicksand", sans-serif;
+  --textPrimaryColor: #fff;
+  --containerPadding: 1rem;
+}
+
+.theme2 {
+  --primaryColor: #fed700;
+  --secondaryColor: var(--bodyColor);
+  --bodyColor: #343f49;
+  --textPrimaryColor: var(var(--bodyColor));
+  --containerPadding: 4rem;
 }
 
 body {
-  font-family: var(--primaryFont);
   font-size: var(--baseFontSize);
   color: var(--bodyColor);
+}
+
+.theme1,
+.theme2 {
+  font-family: var(--primaryFont);
+  color: var(--bodyColor);
+}
+
+.theme1 .secondary-font {
+  font-family: var(--secondaryFont);
+}
+
+.theme2 .section-banner {
+  background-image: url('../public/images/theme2/bg-01.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+button {
+  cursor: pointer;
 }

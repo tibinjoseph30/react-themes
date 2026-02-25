@@ -1,6 +1,6 @@
 const Container = ({children, className=""})=> {
     return(
-        <div className={`px-4 ${className}`}>
+        <div className={`px-(--containerPadding) ${className}`}>
             {children}
         </div>
     )

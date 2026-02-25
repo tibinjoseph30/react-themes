@@ -1,12 +1,21 @@
-import Footer from "../../components/theme-one/footer/Footer";
-import Header from "../../components/theme-one/header/Header";
+import { Outlet } from "react-router-dom";
+import { themes } from "../../utils/themeConfig";
+import ThemeSwitcher from "../ThemeSwitcher";
 
-const MainLayout = ({ children }) => {
+const MainLayout = ({ theme = "theme1" }) => {
+  const selectedTheme = themes[theme];
+  if (!selectedTheme) return null;
+
+  const { Header, Footer, className } = selectedTheme;
+
   return (
-    <div className="theme1">
+    <div className={className}>
       <Header />
-      <main>{children}</main>
-      <Footer/>
+      <main>
+        <Outlet />
+      </main>
+      {Footer && <Footer />}
+      <ThemeSwitcher />
     </div>
   );
 };

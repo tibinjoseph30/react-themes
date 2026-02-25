@@ -12,7 +12,7 @@ const Banner = () => {
             <p className="text-(--secondaryColor) font-semibold">
               Save up to 50% off on your first order
             </p>
-            <h1 className="font-semibold text-6xl mt-3">
+            <h1 className="font-bold text-6xl secondary-font mt-3">
               Daily Grocery Order and Get{" "}
               <span className="text-(--primaryColor)">Express</span> Delivery
             </h1>
