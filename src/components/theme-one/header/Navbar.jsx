@@ -1,7 +1,7 @@
 import { Grid2X2, Smartphone } from "lucide-react";
 import { Link } from "react-router-dom";
-import Button from "../ui/Button";
-import Container from "../layout/Container";
+import Button from "../../../shared/ui/Button";
+import Container from "../../../shared/layout/Container";
 
 const navbarMenu = [
   { label: "Home", url: "" },

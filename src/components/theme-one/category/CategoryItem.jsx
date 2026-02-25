@@ -4,8 +4,12 @@ const CategoryItem = ({ categoryName, categoryImg, productCount }) => {
   return (
     <div className="flex flex-col items-center">
       <Link>
-        <div className="w-36 h-36 rounded-full flex items-center justify-center bg-green-100">
-          <img src={categoryImg} alt={categoryImg} />
+        <div className="w-36 h-36 group overflow-hidden rounded-full flex items-center justify-center bg-green-100 hover:">
+          <img
+            src={categoryImg}
+            alt={categoryImg}
+            className="group-hover:scale-110 transition duration-200"
+          />
         </div>
       </Link>
       <h5 className="font-semibold text-lg mt-3">{categoryName}</h5>

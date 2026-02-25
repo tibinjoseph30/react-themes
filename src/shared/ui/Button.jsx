@@ -7,13 +7,12 @@ const Button = ({
   ...rest
 }) => {
   const baseStyles =
-    "px-4 py-2 font-medium transition duration-200 focus:outline-none inline-flex items-center";
+    "px-5 py-3 font-medium cursor-pointer transition duration-200 whitespace-nowrap focus:outline-none inline-flex items-center justify-center";
 
   const variants = {
-    primary:
-      "bg-[var(--primaryColor)] text-white hover:opacity-90",
-    secondary:
-      "bg-[var(--secondaryColor)] text-white hover:opacity-90",
+    primary: "bg-(--primaryColor) text-white hover:opacity-90",
+    secondary: "bg-(--secondaryColor) text-white hover:opacity-90",
+    primaryLight: "bg-(--primaryColor)/10 text-(--primaryColor) hover:bg-(--primaryColor) hover:text-white",
   };
 
   const radiusStyles = {

@@ -1,6 +1,6 @@
 import { categoriesData } from "../../../data/theme1/categoriesData";
-import Container from "../layout/Container";
-import Section from "../layout/Section";
+import Container from "../../../shared/layout/Container";
+import Section from "../../../shared/layout/Section";
 import CategoryItem from "./CategoryItem";
 
 const CategoryList = () => {

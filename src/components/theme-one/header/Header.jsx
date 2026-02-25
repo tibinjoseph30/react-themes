@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import Logo from "../../../../public/images/theme1/logo.png";
-import Button from "../ui/Button";
+import Button from "../../../shared/ui/Button";
 import { Heart, Search, ShoppingCart, User } from "lucide-react";
 import Topbar from "./Topbar";
-import Container from "../layout/Container";
+import Container from "../../../shared/layout/Container";
 import Navbar from "./Navbar";
-import Input from "../ui/Input";
+import Input from "../../../shared/ui/Input";
 
 const headerMenus = [
   { label: "profile", url: "", icon: <User size={20} /> },

@@ -1,15 +1,17 @@
 import Banner from "../components/theme-one/banner/Banner";
 import CategoryList from "../components/theme-one/category/CategoryList";
-import Container from "../components/theme-one/layout/Container";
-import MainLayout from "../components/theme-one/layout/MainLayout";
+import Container from "../shared/layout/Container";
+import MainLayout from "../shared/layout/MainLayout";
+import ProductList from "../components/theme-one/product/ProductList";
+import Newsletter from "../components/theme-one/newsletter/Newsletter";
 
 const ThemeLayoutOne = () => {
   return (
     <MainLayout>
-        <Container>
-            <Banner/>
-            <CategoryList/>
-        </Container>
+      <Banner />
+      <CategoryList />
+      <ProductList />
+      <Newsletter/>
     </MainLayout>
   );
 };

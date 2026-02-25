@@ -12,7 +12,7 @@ const Input = ({
       placeholder={placeholder}
       onChange={onChange}
       value={value}
-      className={`border border-gray-200 rounded-md ${className}`}
+      className={`border border-gray-200 bg-white px-5 py-3 rounded-md focus:outline-0 ${className}`}
     />
   );
 };
