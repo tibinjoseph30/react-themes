@@ -23,7 +23,7 @@
   --primaryColor: #fed700;
   --secondaryColor: var(--bodyColor);
   --bodyColor: #343f49;
-  --textPrimaryColor: var(var(--bodyColor));
+  --textPrimaryColor: var(--bodyColor);
   --containerPadding: 4rem;
 }
 

@@ -22,7 +22,7 @@ const Header = () => {
             <img src={Logo} alt="logo" className="sm:h-12 h-10" />
           </Link>
           <div className="col-span-2 max-xl:hidden">
-            <Searchbar />
+            <Searchbar variant="theme1" />
           </div>
           <nav className="ml-auto xl:col-span-1 col-span-3 flex items-center sm:gap-6 gap-4">
             <button className="xl:hidden">
