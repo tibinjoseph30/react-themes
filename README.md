@@ -1,16 +1,94 @@
-# React + Vite
+# React Themes App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Responsive React Themes App UI
 
-Currently, two official plugins are available:
+This project is a frontend UI implementation for a combination of themes in one react app.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+----------------------------------------------------
 
-## React Compiler
+# Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React (Vite)
+- Tailwind CSS
+- Functional Components + Hooks
+- Js ES6+
+- Responsive Design 
 
-## Expanding the ESLint configuration
+-----------------------------------------------------
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## 📁 Project Structure
+
+**1. components/**<br/>
+This folder contains all reusable components, organized based on their 
+corresponding pages or functionality.<br/><br/>
+- Main folders:<br/>
+**theme-one/**<br/>
+contains theme one components.<br/>
+**theme-two/**<br/>
+contains theme two components.<br/>
+
+**2. data/**<br/>
+This folder contains static JSON data
+
+**3. pages/**<br/>
+This folder contains the main page-level components that combine multiple 
+related components to form complete views.
+
+**3. shared/**<br/>
+This folder contains the common reusable components for all themes.
+
+**4. App.tsx**<br/>
+Root component of the application. Defines main layout structure.
+
+**5. main.tsx**<br/>
+Mounts React app to the DOM.
+
+**6. AppRouter.tsx**<br/>
+Contains the router between themes.
+
+**7. index.css**<br/>
+contains global styles applied across the application. It integrates Tailwind CSS 
+and includes the Google Font Inter, Poppins, Qucksand for consistent typography.
+
+-------------------------------------------------
+
+# Setup 
+
+1. Clone the repository
+
+- git clone https://github.com/tibinjoseph30/react-themes.git
+
+
+2. Install dependecies
+
+- npm install
+
+
+3. Run the project
+
+- npm run dev
+
+
+4. App will run on:
+
+- http://localhost:5173
+
+-------------------------------------------------------------
+
+# Live Demo
+
+- https://react-themes-app.netlify.app/
+
+-------------------------------------------------------------
+
+# Author
+
+Tibin Joseph<br/>
+Frontent Developer
+
+
+
+
+
+
