@@ -12,14 +12,14 @@ const Topbar = () => {
   return (
     <div className="border-b border-gray-200 py-2">
       <Container className="flex items-center justify-between gap-8 text-sm">
-        <p>Welcome to Worldwide Electronics Store</p>
+        <p className="max-lg:hidden">Welcome to Worldwide Electronics Store</p>
         <nav>
           <ul className="flex gap-6">
             {topbarMenu.map((link, index) => (
               <li key={index} className="not-last:border-r border-gray-200 not-last:pr-6">
                 <Link className="inline-flex items-center">
                   <span className="mr-2">{link.icon}</span>
-                  {link.label}
+                  <span className="max-sm:hidden">{link.label}</span>
                 </Link>
               </li>
             ))}

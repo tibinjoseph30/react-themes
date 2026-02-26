@@ -6,7 +6,7 @@ const ProductList = () => {
   return (
     <>
       <SectionTitle title="Featured" />
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid xl:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4">
         {productsData.map((prod) => (
           <ProductCard key={prod.id} {...prod} />
         ))}

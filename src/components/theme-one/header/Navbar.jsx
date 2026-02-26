@@ -1,7 +1,7 @@
-import { Grid2X2, Smartphone } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Grid2X2, Menu, Smartphone } from "lucide-react";
 import Button from "../../../shared/ui/Button";
 import Container from "../../../shared/layout/Container";
+import NavMenu from "../../../shared/layout/Navmenu";
 
 const navbarMenu = [
   { label: "Home", url: "" },
@@ -24,21 +24,20 @@ const Navbar = () => {
             Browse Categories
           </Button>
         </div>
-        <ul className="col-span-2 flex gap-10 items-center">
-          {navbarMenu.map((menu, index) => (
-            <li key={index}>
-              <Link to={menu.url} className="font-medium hover:text-(--primaryColor)">
-                {menu.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
-        <div className="flex gap-4 items-center ml-auto">
-          <Smartphone className="text-(--primaryColor)" />
-          <div className="font-medium">
-            <p>Need any Help! call Us</p>
-            <p  className="text-(--primaryColor)">+2 871 382 023</p>
+        <div className="col-span-2 max-xl:hidden">
+          <NavMenu menus={navbarMenu} variant="theme1" />
+        </div>
+        <div className="flex gap-4 items-center ml-auto xl:col-span-1 col-span-3">
+          <div className="flex items-center gap-4 max-sm:hidden">
+            <Smartphone className="text-(--primaryColor)" />
+            <div className="font-medium">
+              <p>Need any Help! call Us</p>
+              <p className="text-(--primaryColor)">+2 871 382 023</p>
+            </div>
           </div>
+          <button className="xl:hidden">
+            <Menu />
+          </button>
         </div>
       </Container>
     </nav>

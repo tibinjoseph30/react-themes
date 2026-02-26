@@ -16,15 +16,17 @@ const Footer = () => {
     <footer>
       <Container>
         <Section>
-          <div className="grid grid-cols-4 gap-12">
+          <div className="grid 2xl:grid-cols-4 grid-cols-2 gap-12">
             <AddressBar />
-            <div className="col-span-2 flex gap-8">
+            <div className="col-span-2 2xl:order-2 order-3 2xl:flex grid lg:grid-cols-4 grid-cols-2 gap-8">
               <FooterMenu title="Information" links={infoLinks} />
               <FooterMenu title="Customer Support" links={supportLinks} />
               <FooterMenu title="My Account" links={accountLinks} />
               <FooterMenu title="Daily Groceries" links={dailyLinks} />
             </div>
-            <AppStore />
+            <div className="2xl:order-3 order-2">
+                <AppStore />
+            </div>
           </div>
         </Section>
         <Bottombar copyright="Copyright © 2025 Ui-drops All Rights Reserved" className="py-5 border-t border-gray-200" />

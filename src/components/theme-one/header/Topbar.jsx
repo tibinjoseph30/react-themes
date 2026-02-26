@@ -16,11 +16,11 @@ const Topbar = () => {
             15 <small>days</small>
           </span>
         </p>
-        <p className="text-sm">
+        <p className="text-sm max-md:hidden">
           Buy one get one free on{" "}
           <span className="text-amber-400">first order</span>
         </p>
-        <ul className="flex items-center gap-4 text-sm">
+        <ul className="flex items-center gap-4 text-sm max-md:hidden">
           {topbarMenu.map((item, index) => (
             <li key={index}>
               <Link to={item.url}>{item.label}</Link>

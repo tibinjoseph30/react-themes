@@ -7,7 +7,7 @@ const CategoryList = () => {
   return (
     <Section>
       <Container>
-        <div className="grid grid-cols-6">
+        <div className="grid gap-4 lg:grid-cols-6 sm:grid-cols-3 grid-cols-2">
           {categoriesData.map((cat) => (
             <CategoryItem key={cat.id} {...cat} />
           ))}

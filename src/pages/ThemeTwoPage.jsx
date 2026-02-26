@@ -10,11 +10,11 @@ const ThemeTwoPage = () => {
     <>
       <Banner />
       <Section>
-        <Container className="grid grid-cols-4 gap-8">
+        <Container className="grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 gap-8">
           <div>
             <Deals />
           </div>
-          <div className="col-span-3">
+          <div className="xl:col-span-3 sm:col-span-2">
             <ProductList />
           </div>
         </Container>

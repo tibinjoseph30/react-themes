@@ -2,10 +2,9 @@ import Topbar from "./Topbar";
 import Logo from "../../../../public/images/theme2/logo.svg";
 import { Link } from "react-router-dom";
 import Container from "../../../shared/layout/Container";
-import Input from "../../../shared/ui/Input";
-import Button from "../../../shared/ui/Button";
 import { Heart, Repeat, Search, ShoppingBag } from "lucide-react";
 import Navbar from "./Navbar";
+import Searchbar from "../../../shared/layout/Searchbar";
 
 const navIcons = [
   { icon: <Repeat size={20} /> },
@@ -18,20 +17,17 @@ const Header = () => {
     <header>
       <Topbar />
       <Container>
-        <div className="grid grid-cols-5 items-center py-6">
+        <div className="xl:grid max-xl:flex grid-cols-5 gap-8 items-center py-6">
           <Link>
             <img src={Logo} alt={Logo} />
           </Link>
-          <div className="col-span-3 border-2 border-(--primaryColor) rounded-full overflow-hidden flex items-center">
-            <Input
-              placeholder="Search for Products"
-              className="border-0 w-full"
-            />
-            <Button className="rounded-none">
-              <Search />
-            </Button>
+          <div className="col-span-3 max-xl:hidden">
+            <Searchbar variant="theme2" />
           </div>
-          <nav className="ms-auto flex items-center gap-3">
+          <nav className="ms-auto flex xl:col-span-1 col-span-4 items-center gap-8">
+            <button className="xl:hidden">
+                <Search size={20}/>
+            </button>
             <ul className="flex items-center gap-8">
               {navIcons.map((ico, index) => (
                 <li key={index}>
@@ -39,7 +35,7 @@ const Header = () => {
                 </li>
               ))}
             </ul>
-            <p className="font-semibold">$1785.00</p>
+            <p className="font-semibold max-sm:hidden">$1785.00</p>
           </nav>
         </div>
         <Navbar />

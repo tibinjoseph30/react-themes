@@ -6,13 +6,13 @@ import Container from "../../../shared/layout/Container";
 const Banner = () => {
   return (
     <Container>
-      <section className="bg-cyan-50 px-12 py-20 my-6 rounded-3xl">
-        <div className="flex items-center gap-8">
+      <section className="bg-cyan-50 sm:px-12 px-8 py-20 my-6 rounded-3xl">
+        <div className="lg:flex items-center gap-8">
           <div>
             <p className="text-(--secondaryColor) font-semibold">
               Save up to 50% off on your first order
             </p>
-            <h1 className="font-bold text-6xl secondary-font mt-3">
+            <h1 className="font-bold sm:text-6xl text-4xl secondary-font mt-3">
               Daily Grocery Order and Get{" "}
               <span className="text-(--primaryColor)">Express</span> Delivery
             </h1>

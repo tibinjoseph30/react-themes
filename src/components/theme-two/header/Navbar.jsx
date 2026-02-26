@@ -1,6 +1,6 @@
-import { List } from "lucide-react";
-import { Link } from "react-router-dom";
+import { List, Menu } from "lucide-react";
 import Button from "../../../shared/ui/Button";
+import NavMenu from "../../../shared/layout/Navmenu";
 
 const navMenu = [
   { label: "Super Deals", url: "" },
@@ -20,14 +20,15 @@ const Navbar = () => {
           All Departments
         </Button>
       </div>
-      <ul className="col-span-3 flex gap-8">
-        {navMenu.map((menu, index) => (
-          <li key={index}>
-            <Link to={menu.url} className="font-bold hover:text-black">{menu.label}</Link>
-          </li>
-        ))}
-      </ul>
-      <p className="ms-auto">Free Shipping on Orders $50+</p>
+      <div className="xl:col-span-3 col-span-4 max-xl:ms-auto">
+        <NavMenu menus={navMenu} variant="theme2" className="max-lg:hidden" />
+        <button className="lg:hidden">
+            <Menu/>
+        </button>
+      </div>
+      <div className="ms-auto max-xl:hidden">
+        <p>Free Shipping on Orders $50+</p>
+      </div>
     </nav>
   );
 };

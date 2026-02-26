@@ -13,7 +13,7 @@ const AppStore = () => {
       <div className="flex gap-4 flex-col mt-6">
         {appLinks.map((link, index) => (
           <Link to={link.url} key={index}>
-            <div className="px-6 py-3 rounded-md shadow-sm inline-flex items-center justify-center shadow-gray-300 hover:text-white hover:bg-(--primaryColor) min-w-40">
+            <div className="px-6 py-3 rounded-md shadow-sm inline-flex items-center justify-center shadow-gray-300 hover:text-white hover:bg-(--primaryColor) sm:min-w-40 max-sm:w-full">
               {link.label}
             </div>
           </Link>

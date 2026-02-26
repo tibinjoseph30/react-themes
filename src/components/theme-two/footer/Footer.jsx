@@ -12,11 +12,11 @@ const Footer = () => {
   return (
     <footer className="bg-gray-100">
       <Section>
-        <Container className="grid grid-cols-5">
+        <Container className="grid xl:grid-cols-5 gap-8 lg:grid-cols-4">
           <div className="col-span-2">
             <AddressBar />
           </div>
-          <div className="col-span-3 grid grid-cols-3 gap-5">
+          <div className="xl:col-span-3 col-span-2 grid xl:grid-cols-3 sm:grid-cols-2 gap-5">
             <FooterMenu title="Find it Fast" links={findItLinks} />
             <FooterMenu title="Customer Care" links={customerCareLinks} />
           </div>

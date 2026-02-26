@@ -43,11 +43,18 @@ body {
 }
 
 .theme2 .section-banner {
-  background-image: url('../public/images/theme2/bg-01.jpg');
+  background-image: url("../public/images/theme2/bg-01.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 button {
   cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .theme1,
+  .theme2 {
+    --containerPadding: 1rem;
+  }
 }

@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
 import Logo from "../../../../public/images/theme1/logo.png";
-import Button from "../../../shared/ui/Button";
 import { Heart, Search, ShoppingCart, User } from "lucide-react";
 import Topbar from "./Topbar";
 import Container from "../../../shared/layout/Container";
 import Navbar from "./Navbar";
-import Input from "../../../shared/ui/Input";
+import Searchbar from "../../../shared/layout/Searchbar";
 
 const headerMenus = [
   { label: "profile", url: "", icon: <User size={20} /> },
@@ -18,28 +17,23 @@ const Header = () => {
     <header>
       <Topbar />
       <div className="py-6 border-b border-gray-200">
-        <Container className="grid grid-cols-4 items-center">
+        <Container className="lg:grid flex grid-cols-4 items-center">
           <Link>
-            <img src={Logo} alt="logo" className="h-12" />
+            <img src={Logo} alt="logo" className="sm:h-12 h-10" />
           </Link>
-          <div className="col-span-2">
-            <div className="border border-gray-200 px-2 py-2 rounded-sm flex items-center gap-4">
-              <Input
-                placeholder="search products, categories or brands"
-                className="w-full outline-0 border-0"
-              />
-              <Button>
-                <Search />
-              </Button>
-            </div>
+          <div className="col-span-2 max-xl:hidden">
+            <Searchbar />
           </div>
-          <nav className="ml-auto">
-            <ul className="flex gap-5">
+          <nav className="ml-auto xl:col-span-1 col-span-3 flex items-center sm:gap-6 gap-4">
+            <button className="xl:hidden">
+              <Search size={20} />
+            </button>
+            <ul className="flex sm:gap-5 gap-4">
               {headerMenus.map((menu, index) => (
                 <li key={index}>
                   <Link to={menu.url} className="flex items-center">
-                    <span className="mr-2">{menu.icon}</span>
-                    {menu.label}
+                    <span className="sm:mr-2">{menu.icon}</span>
+                    <span className="max-md:hidden">{menu.label}</span>
                   </Link>
                 </li>
               ))}
@@ -47,7 +41,7 @@ const Header = () => {
           </nav>
         </Container>
       </div>
-      <Navbar/>
+      <Navbar />
     </header>
   );
 };
