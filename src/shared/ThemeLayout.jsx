@@ -7,7 +7,7 @@ const themeMenu = [
 
 const ThemeLayout = () => {
   return (
-    <div className="bg-black/90 text-white fixed z-15 right-3 bottom-20 w-[200px] rounded-xl p-5">
+    <div className="bg-black/90 text-white fixed z-15 right-3 bottom-20 w-50 rounded-xl p-5">
       <ul className="space-y-3">
         {themeMenu.map((theme, index) => (
           <li key={index}>

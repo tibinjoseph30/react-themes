@@ -38,6 +38,15 @@ related components to form complete views.
 **3. shared/**<br/>
 This folder contains the common reusable components for all themes.
 
+- main layout<br/>
+- search bar<br/>
+- footer menus<br/>
+- section<br/>
+- section title<br/>
+- nav menus<br/>
+- app container<br/>
+- overlay<br/>
+
 **4. App.tsx**<br/>
 Root component of the application. Defines main layout structure.
 
