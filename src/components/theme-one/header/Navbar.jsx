@@ -1,7 +1,7 @@
 import { Grid2X2, Menu, Smartphone } from "lucide-react";
 import Button from "../../../shared/ui/Button";
 import Container from "../../../shared/layout/Container";
-import NavMenu from "../../../shared/layout/Navmenu";
+import NavMenu from "../../../shared/layout/NavMenu";
 import { useState } from "react";
 import Logo from "../../../../public/images/theme1/logo.png";
 import { Link } from "react-router-dom";

@@ -1,10 +1,10 @@
 import { List, Menu } from "lucide-react";
 import Button from "../../../shared/ui/Button";
-import NavMenu from "../../../shared/layout/Navmenu";
 import { useState } from "react";
 import Logo from "../../../../public/images/theme2/logo.svg";
 import { Link } from "react-router-dom";
 import Overlay from "../../../shared/layout/Overlay";
+import NavMenu from "../../../shared/layout/NavMenu";
 
 const navMenu = [
   { label: "Super Deals", url: "" },
